@@ -1,69 +1,30 @@
-# repertoire
+# This project is built for a friend that has a band.
+### The point of the app is:
+To allow the band owner (Admin) to create events, add songs repertoire with lyrics, start events, interact with guests and songs, etc.
 
-## Build Setup
+## The Admin features include:
+- adding events with time and description
+- adding songs, together with lyrics so guests can sing along
+- making an event live or ending it
+### While event is live Admin can:
+- mark song as next
+- mark song as done
+- re-add song from the done songs pool
+- accept suggestion
+- remove songs
 
-```bash
-# install dependencies
-$ npm install
+## The Guests features include:
+- get 3 vote points, and 1 suggestion point. Upcoming feature will be able to increase the points by interacting with Admin social media.
+- voting for songs while event is live
+- suggesting a song
+- watching live as song is being done, or which song is currently playing, show lyrics of current song, or not, etc
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# Upcoming planned features:
+- Facebook login for Guests in order to like Admins page, maybe like a post or something, and get more vote points, and suggestion points
+- About same for twitter, and other social media
+- Add proper Admin authentication, so the password is not in the actual code.
+- etc
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+# Collaborate
+If someone wants to collaborate on the code, feel free to message me.
+This is project for fun, that I've built from scratch, so please don't use the code for anything stupid. If you plan on earning on it, at least buy me a beer, or include would be nice. Cheers!
