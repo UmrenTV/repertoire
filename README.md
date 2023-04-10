@@ -45,6 +45,7 @@ export default {
 };
 ```
 BUT, I am sure you can probably get this whole object from firebase directly. Check their examples, and documentation.
+ALSO, if you wondering why this .firebaseConfig.js ... I am importing it in nuxt.config.js, so you might have to check that if it still works.
 - After that done, navigate to project folder and type:
 ```
 npm install
