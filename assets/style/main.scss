@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+html,
+body,
+input,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Mono", Sans-serif;
+  font-size: 22px;
+}
+.mobile {
+  display: none;
+  @media screen and (max-width: 812px) {
+    display: block;
+  }
+}
+
+.desktop {
+  display: block;
+  @media screen and (max-width: 812px) {
+    display: none;
+  }
+}
+
+.admin-title {
+  font-size: 3vw;
+  padding-bottom: 3vw;
+}
+
+.admin-subtitle {
+  font-size: 2vw;
+  padding-bottom: 2vw;
+}
+
+.admin-label {
+  font-size: 1.3vw;
+}
+
+.title {
+  color: white;
+  font-size: 8vw;
+  line-height: 8vw;
+  padding: 0.5vw 0px;
+  @media screen and (max-width: 812px) {
+    font-size: 21vw;
+    line-height: 21vw;
+    padding: 1vw 0px;
+    text-align: center;
+  }
+}
+.subtitle {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 3vw;
+  padding: 1vw 0px;
+  @media screen and (max-width: 812px) {
+    font-size: 5vw;
+    line-height: 6vw;
+    padding: 5vw 0px;
+  }
+}
+.black-text {
+  color: black;
+}
+
+.main-button {
+  padding: 0.5rem 1rem;
+  margin: 20px 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.border-black {
+  border: 1px solid black;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hover-effect:hover,
+.selected {
+  background: var(--color-primary);
+  color: white;
+}
+.hover-effect,
+.selected {
+  transition: 0.25s ease-in-out;
+}
+
+// root variables
+:root {
+  --color-primary: rgb(0, 100, 255);
+  --color-background: rgba(0, 0, 0, 0.7);
+}
+
+// Side scroller styles
+
+body::-webkit-scrollbar {
+  width: 0.8vw;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 0.8vw;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 812px) {
+  body::-webkit-scrollbar {
+    width: 1.2vw;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 1.2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body::-webkit-scrollbar {
+    width: 2vw;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 2vw;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.router-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: black 1px solid;
+
+  p {
+    font-size: 11px;
+  }
+  padding-bottom: 0.3vw;
+}
