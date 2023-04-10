@@ -28,3 +28,32 @@ To allow the band owner (Admin) to create events, add songs repertoire with lyri
 # Collaborate
 If someone wants to collaborate on the code, feel free to message me.
 This is project for fun, that I've built from scratch, so please don't use the code for anything stupid. If you plan on earning on it, at least buy me a beer, or include would be nice. Cheers!
+
+# Oh yeah... Instructions:
+- Clone the code.
+- Go to firebase and create realtime database
+- Add .firebaseConfig.js to the root folder of your code with the following content:
+```
+export default {
+  apiKey: "APIKEY",
+  authDomain: "yourprojectlink.firebaseapp.com",
+  databaseURL: "https://project-stuffs-default-rtdb.firebaseio.com",
+  projectId: "PROJECTID",
+  storageBucket: "appname.appspot.com",
+  messagingSenderId: "SOMEID",
+  appId: "APP ID"
+};
+```
+BUT, I am sure you can probably get this whole object from firebase directly. Check their examples, and documentation.
+- After that done, navigate to project folder and type:
+```
+npm install
+npm run dev
+```
+- TA-DA !
+
+
+# Disclaimer:
+This is an old project that I haven't touched in a long time, I was quite noobish then, so for some weird spaghetti code and random comments, I appologize in advance.
+Also, I would like to mention, that you need to probably update some packages, and maybe break the code, etc etc... so just keep that in mind.
+Cheers!
